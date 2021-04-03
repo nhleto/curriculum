@@ -29,7 +29,6 @@ If you would like to help us develop any lessons, please read our [contributing 
 
 To find out more about how you can contribute, please read our [contributing guide](https://github.com/TheOdinProject/curriculum/blob/master/CONTRIBUTING.md).
 
-## Other helpful links
 
 *For more information about The Odin Project, go to [theodinproject.com](http://theodinproject.com).*
 
