@@ -42,6 +42,7 @@ To find out more about how you can contribute, please read our [contributing gui
 ___
 Created by [Erik Trautman](http://www.github.com/eriktrautman)
 
+HERE IS A MINOR CHANGE LOL
 
 # The Odin Project - Javascript Curriculum
 
