@@ -22,7 +22,7 @@ REST (short for Representational state transfer) is a term that you'll see comin
 5. POST the data you just filled out for a new post back to the server so it can create that post (aka **"create"** the post)
 4. GET the page that lets you edit an existing post (aka view the **"edit"** post page)
 5. PUT (or PATCH) the data you just filled out for editing the post back to the server so it can actually perform the update (aka **"update"** the post)
-6. DELETE one specific post by sending a delete request to the server (aka **"delete"** the post)
+6. DELETE one specific post by sending a delete request to the server (aka **"destroy"** the post)
 
 The highlighted words correspond to standard Rails controller actions!
 
@@ -93,7 +93,7 @@ But we get ahead of ourselves a bit here... the main point is that you'll see "A
 
 ### Cookies
 
-You've heard about cookies.  Cookies are basically a way for websites to remember who you are from one request to another.  Remember -- every HTTP request is totally independent of each other one.  Meaning that when you go to the Home page of a website and then click on a link to their About page, the web server treats you as a completely new user.
+You've heard about cookies.  Cookies are basically a way for websites to remember who you are from one request to another.  Remember -- every HTTP request is totally independent of each other.  Meaning that when you go to the Home page of a website and then click on a link to their About page, the web server treats you as a completely new user.
 
 ...Unless they've given you some cookies (which they almost certainly have).  Cookies are little bits of data that your browser sends to the website every time you make a request to it.  From the perspective of the web server, it lets the server identify you as the same person who made any of a series of previous requests.  It preserves the *state* of your session.
 

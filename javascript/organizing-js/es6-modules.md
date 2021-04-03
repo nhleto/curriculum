@@ -12,7 +12,7 @@ After completing this lesson, you will be able to:
 - Describe what a JavaScript module bundler like webpack is.
 - Explain what the concepts "entry" and "output" mean as relates to webpack.
 - Briefly explain what a development dependency is.
-- Explain what "transpiling code means" and how it relates to frontend development.
+- Explain what "transpiling code" means and how it relates to frontend development.
 - Briefly describe what a task runner is and how it's used in frontend development.
 - Describe how to write an npm automation script.
 - Explain one of the main benefits of writing code in modules.
@@ -22,14 +22,13 @@ After completing this lesson, you will be able to:
 
 Why do we even need or want this stuff? What do you gain from all of this added complexity? These are good questions.. with good answers.
 
-- Read [this article](https://medium.com/the-node-js-collection/modern-javascript-explained-for-dinosaurs-f695e9747b70) for a bit of a history lesson. It's long, but it puts what we're doing here in great perspective. You don't _have_ to code along with the examples - the tutorials we cover later will go through basically the same process. But it's good practice and going through the same process multiple times will help it stick faster.
-- Seriously.. spend some time with that article - it really clarifies the 'WHY' of the rest of this lesson.
+- Read [this article](https://peterxjang.com/blog/modern-javascript-explained-for-dinosaurs.html) for a bit of a history lesson. It's long, but it puts what we're doing here in great perspective.  This article is a bit older, and those who have coded along with the example have frequently run into issues, so we don't suggest that you code along (you'll be following along with the offical Webpack documentation later). Nevertheless, this article is extremely important conceptually and really clarifies the 'WHY' of the rest of this lesson.
 
 ### npm
 
 The __node package manager__ is a command line tool that gives you access to a gigantic repository of plugins, libraries and tools. If you have done our Fundamentals course, you will probably have encountered it when you installed the Jasmine testing framework to do our exercises.
 
-1. Take a couple minutes to watch [this video](https://docs.npmjs.com/getting-started/what-is-npm) - a great introduction to npm.
+1. Take a couple minutes to read the [About npm](https://docs.npmjs.com/getting-started/what-is-npm) page - a great introduction to npm.
 2. [This video](https://docs.npmjs.com/getting-started/installing-npm-packages-locally) teaches you how to install packages with npm.
 3. [This tutorial](https://docs.npmjs.com/getting-started/using-a-package.json) covers the `package.json` file, which you can use to manage your project's dependencies
 4. If you run into trouble at any point you can check out [the official docs page](https://docs.npmjs.com/) for more tutorials and documentation.
@@ -110,7 +109,7 @@ and then in `src/index.js` import and use your new function.
 import myName from './myName';
 
 function component() {
-  var element = document.createElement('div');
+  const element = document.createElement('div');
 
   // use your function!
   element.innerHTML = myName('Cody');

@@ -67,13 +67,13 @@ We can re-write our `while` loop examples using `until`.
 
 ~~~ruby
 i = 0
-until i > 10 do
+until i >= 10 do
  puts "i is #{i}"
  i += 1
 end
 ~~~
 
-You can see here that using `until` means that the loop will continue running until the condition i > 10 is true.
+You can see here that using `until` means that the loop will continue running until the condition i >= 10 is true.
 
 The next example shows how you can use `until` to avoid the negation `!` that the above `while` loop had to use.
 
@@ -87,7 +87,7 @@ Much more readable! This code is guaranteed to get you a "yes".
 
 ### Ranges
 
-What if we know exactly how many times we want our loop to run? Ruby lets us use something called a [range](https://ruby-doc.org/core-2.6.1/Range.html) to define an interval. All we need to do is give Ruby the starting value, the ending value, and whether we want the range to be inclusive or exclusive. 
+What if we know exactly how many times we want our loop to run? Ruby lets us use something called a [range](https://ruby-doc.org/core-2.7.1/Range.html) to define an interval. All we need to do is give Ruby the starting value, the ending value, and whether we want the range to be inclusive or exclusive. 
 
 ~~~ruby
 (1..5)      # inclusive range: 1, 2, 3, 4, 5
@@ -103,7 +103,7 @@ A `for` loop is used to iterate through a collection of information such as an a
 
 ~~~ruby
 for i in 0..5
-  puts "#{i} zombies incoming!."
+  puts "#{i} zombies incoming!"
 end
 ~~~
 
